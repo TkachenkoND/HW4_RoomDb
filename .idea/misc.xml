@@ -20,9 +20,11 @@
         <entry key="..\:/Lektorium/Course/HW_3_new_version/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
         <entry key="..\:/Lektorium/Course/HW_3_new_version/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
         <entry key="..\:/Lektorium/Course/HomeWork_3/app/src/main/res/drawable/circle.xml" value="0.202734375" />
+        <entry key="..\:/Lektorium/Course/HomeWork_3/app/src/main/res/drawable/ic_arrow_back.xml" value="0.202734375" />
         <entry key="..\:/Lektorium/Course/HomeWork_3/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.202734375" />
         <entry key="..\:/Lektorium/Course/HomeWork_3/app/src/main/res/drawable/img.xml" value="0.202734375" />
-        <entry key="..\:/Lektorium/Course/HomeWork_3/app/src/main/res/layout/details_activity.xml" value="0.264" />
+        <entry key="..\:/Lektorium/Course/HomeWork_3/app/src/main/res/layout/details_activity.xml" value="0.2" />
+        <entry key="..\:/Lektorium/Course/HomeWork_3/app/src/main/res/layout/edit_profile_activity.xml" value="0.2" />
         <entry key="..\:/Lektorium/Course/HomeWork_3/app/src/main/res/layout/user_list_activity.xml" value="0.190625" />
       </map>
     </option>

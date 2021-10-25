@@ -25,6 +25,11 @@
 
         </activity>
 
+        <activity android:name=".view.EditUserActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
 
     </application>
 

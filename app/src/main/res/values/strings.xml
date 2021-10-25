@@ -10,4 +10,8 @@
     <string name="social_score">Social score</string>
     <string name="reach">Reach</string>
     <string name="sharemeter">Sharemeter</string>
+    <string name="edit_profile">edit profile</string>
+    <string name="edit_your_profile">Edit your profile</string>
+    <string name="link_in_your_photo">Link in your photo</string>
+    <string name="change">change</string>
 </resources>

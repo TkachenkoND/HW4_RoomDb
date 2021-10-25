@@ -1,6 +1,7 @@
 package com.example.hw_3.view
-
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -24,8 +25,11 @@ class UserListActivity : AppCompatActivity() {
         vm = ViewModelProvider(this).get(UserViewModel::class.java)
 
         initObservers()
+
         vm.insertUserToDB()
+
         vm.loadListUsers()
+
     }
 
     private fun initObservers() {
@@ -90,7 +94,7 @@ class UserListActivity : AppCompatActivity() {
         vm.userId.observe(this, Observer {
             val intent = Intent(this, DetailsUserActivity::class.java)
             intent.putExtra("id", it)
-            startActivity(intent);
+            startActivity(intent)
         })
 
     }
@@ -115,5 +119,7 @@ class UserListActivity : AppCompatActivity() {
             .error(R.drawable.ic_launcher_foreground)
             .into(userPhoto)
     }
+
+
 
 }

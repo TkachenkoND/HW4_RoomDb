@@ -8,10 +8,14 @@ import com.example.hw_3.model.User
 import com.example.hw_3.model.UserDataBase
 import com.example.hw_3.model.UserDataBaseDao
 
+
 class DetailsUserViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _userDetailsLiveData = MutableLiveData<User>()
     val userDetailsLiveData: LiveData<User> = _userDetailsLiveData
+
+    private val _userId = MutableLiveData<Int>()
+    val userId: LiveData<Int> = _userId
 
     private var userDao: UserDataBaseDao
 
@@ -22,4 +26,10 @@ class DetailsUserViewModel(application: Application) : AndroidViewModel(applicat
     fun loadDetailsUser(id: Int) {
         _userDetailsLiveData.value = userDao.get(id)
     }
+
+    fun updateUser(user: User) {
+        userDao.update(user)
+    }
+
+
 }
