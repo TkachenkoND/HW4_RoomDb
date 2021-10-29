@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="@color/white"
+            app:rippleColor="#FFFFFF"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="@color/white"
+            app:rippleColor="#FFFFFF"
+            app:srcCompat="@drawable/ic_update" />
+    </androidx.appcompat.widget.Toolbar>
+
+
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -15,25 +46,9 @@
             android:background="@drawable/background_3">
 
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnBack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                app:backgroundTint="@color/purple_200"
-                app:rippleColor="#FFFFFF"
-                app:srcCompat="@drawable/ic_arrow_back" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="280dp"
-                android:layout_marginTop="10dp"
-                app:backgroundTint="@color/purple_200"
-                app:rippleColor="#FFFFFF"
-                app:srcCompat="@drawable/ic_update" />
+
+
         </LinearLayout>
 
 

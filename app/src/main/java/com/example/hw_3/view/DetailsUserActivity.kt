@@ -4,9 +4,9 @@ package com.example.hw_3.view
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.hw_3.R
@@ -14,6 +14,9 @@ import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
 import com.example.hw_3.view_model.DetailsUserViewModel
 import kotlinx.android.synthetic.main.details_activity.*
+
+
+
 
 class DetailsUserActivity : AppCompatActivity() {
 
@@ -25,13 +28,10 @@ class DetailsUserActivity : AppCompatActivity() {
 
         vm = ViewModelProvider(this).get(DetailsUserViewModel::class.java)
 
-        val arg = intent.extras
-        val id: Int = arg?.getInt("id")!!.toInt()
-
         initObservers()
-        vm.loadDetailsUser(id)
+        vm.loadDetailsUser(getId())
 
-        onClickBtnEdit(btnEdit, id)
+        onClickBtnEdit(btnEdit, getId())
 
         onClickBtnBack(btnBack)
 
@@ -83,5 +83,12 @@ class DetailsUserActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun getId(): Int{
+        val arg = intent.extras
+        val id: Int = arg?.getInt("id")!!.toInt()
+        return id
+    }
+
 
 }
